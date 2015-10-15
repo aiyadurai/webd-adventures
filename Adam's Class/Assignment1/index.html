@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Font Fun</title>
+		
+		<link href='https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700' rel='stylesheet' type='text/css'>	   
+		
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+		<style>
+            
+        html {
+            font-size: 16px;
+        }
+
+		* {
+			/* Allows for any changing values to be accompanied with smooth motion. */
+			-webkit-transition: all 1s cubic-bezier(.43,0,.24,1);
+			-moz-transition: all 1s cubic-bezier(.43,0,.24,1);
+			-ms-transition: all 1s cubic-bezier(.43,0,.24,1);
+			-o-transition: all 1s cubic-bezier(.43,0,.24,1);
+			transition: all 1s cubic-bezier(.43,0,.24,1);
+		}
+
+		@font-face {
+			font-family: 'Inknut Antiqua';
+			src: url('InknutAntiqua-SemiBold.ttf') format('truetype');
+			font-style: normal;
+			font-weight: normal;
+		}
+
+		body {
+			display: flex;
+			background-color:#f0f0f0; 
+			color:#434343;
+			margin:0;
+			-ms-justify-content: center;
+			justify-content: center;
+		}
+
+		section {
+			display: flex;
+			-ms-justify-content: center;
+			justify-content: center;
+		}
+
+		main {
+			display: flex;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+			height: 90vh;
+			min-width: 320px;
+            width: calc(320px + 10vw);
+			border-top: 15px solid #cc4e45;
+		}
+
+		h1 {
+            transition: none;
+			margin-top: calc(100px + 5vh);
+			text-align: right;
+			font-family: "Inknut Antiqua";
+			font-size: calc(1.5em + 1vw);
+			color: #cc4e45;
+		}
+
+		h2 {
+			margin-top: 100px;
+			font-family: "Anonymous Pro";
+			font-weight: 700;
+			font-size: 1.125em;
+		}
+
+		p {
+             transition: none;
+			text-align: justify;
+			font-family: "Anonymous Pro";
+			font-weight: 400;
+			font-size: calc(00.625em + 1vw);
+			letter-spacing: 0.5px;
+			line-height: 1.25em;
+		}
+
+		#section2 {
+			width: 0;
+			overflow: hidden;
+			margin-left: 2vw;
+		}
+
+		#main2 {
+			border: 15px solid #f0f0f0;
+		}
+
+		#header2 {
+			opacity: 0;
+		}
+
+		#byline2 {
+			opacity: 0;
+		}
+
+		.animateSection {
+			-webkit-animation: slideopen 1s cubic-bezier(.43,0,.24,1) 0s 1 both;;
+			-o-animation: slideopen 1s cubic-bezier(.43,0,.24,1) 0s 1 both;;
+			animation: slideopen 1s cubic-bezier(.43,0,.24,1) 0s 1 both;;
+		}
+
+		.hideSection {
+			-webkit-animation: slideclosed 1s cubic-bezier(.43,0,.24,1) 0s 1 both;;
+			-o-animation: slideclosed 1s cubic-bezier(.43,0,.24,1) 0s 1 both;;
+			animation: slideclosed 1s cubic-bezier(.43,0,.24,1) 0s 1 both;;
+		}
+
+		@-webkit-keyframes slideopen {
+			from { width: 0; }
+			to { min-width: 320px;
+            width: calc(320px + 10vw); }
+		}
+		@-o-keyframes slideopen {
+			from { width: 0; }
+			to { min-width: 320px;
+            width: calc(320px + 10vw); }
+		}
+		@-moz-keyframes slideopen {
+			from { width: 0; }
+			to { min-width: 320px;
+            width: calc(320px + 10vw); }
+		}
+		@keyframes slideopen {
+			from { width: 0; }
+			to { min-width: 0;
+            width: calc(320px + 10vw); }
+		}
+
+		@-webkit-keyframes slideclosed {
+			from { min-width: 0;
+            width: calc(320px + 10vw); }
+			to { width: 0; }
+		}
+		@-o-keyframes slideclosed {
+			from { min-width: 0;
+            width: calc(320px + 10vw); }
+			to { width: 0; }
+		}
+		@-moz-keyframes slideclosed {
+			from { min-width: 0;
+            width: calc(320px + 10vw); }
+			to { width: 0; }
+		}
+		@keyframes slideclosed {
+			from { min-width: 0;
+            width: calc(320px + 10vw); }
+			to { width: 0; }
+		}
+            
+        @media screen and (max-width: 700px) {
+            p {            
+                font-size: 1.125em;
+            }   
+            
+            h1 {
+                font-size: 1.938em;
+            }
+        }
+            
+        
+            
+        @media screen and (min-width: 1500px) {
+            p {
+                font-size: 1.5em;
+            }
+            h1 {
+                font-size: 2.438em;
+            }
+		</style>
+
+	</head>
+	<body>
+		<section>
+			<main>
+				<h1>shangeeth a.</h1>
+				<p>-<br>From yonder hills, hark! The song of the goon can be heard, a soft thrushing blare of hip hop airhorns, unecessary pant baggage and the ever-present expensive haircut covered by a genuine NBA cap. Didst thou not consider the beauty of Brampton to be of a fine luster? Aye, &apos;tis my town. But alas, I hail not from this bright inlet of swag. I call the diaspora francais mine birthright, of Ville Montreal. Sans-doute, &apos;tis a proud cultural heritage.</p>
+				<h2>-<br>Shangeeth Aiyadurai<br>aka ya boi shane c.1995</h2>
+			</main>
+		</section>
+		<section id="section2">
+			<main id="main2">
+				<h1 id="header2">#praiseadam</h1>
+				<p>-<br>Wish ye to know more? Aspirations, holy visions, and delusions of grandeur are all things partly present in each sane man of valor. Confidently, your beloved auteur believeth not in vanity and fame. as ye believeth in work and furthering thine work, so do I. Together, we may pray verily for the sucess of our futures. <br><br><br> #amen.</p>
+				<h2 id="byline2">-<br>Shangeeth Aiyadurai<br>aka ya boi shane c.1995</h2>
+			</main>
+		</section>
+		<script>
+			if (document.documentElement.clientWidth > 801) {
+				document.querySelector('#section2').classList.add('animateSection');
+
+			}
+			
+			window.onresize = function() {
+				document.querySelector('#section2').classList.toggle('animateSection', document.documentElement.clientWidth > 1001);
+				document.querySelector('#section2').classList.toggle('hideSection', document.documentElement.clientWidth < 1000);
+			}
+		</script>
+	</body>
+</html>
