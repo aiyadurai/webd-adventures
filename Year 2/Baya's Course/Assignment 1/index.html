@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Created by Shangeeth A. -->
+<!-- For Prof. Baya Benrachi, WEBD221 -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<!-- Page Purpose: Introduction Page (links to Course Objective) -->
+	<title>Welcome to WEBD221</title>
+	<link rel="stylesheet" href="css/killerstyle.css">
+	<!-- This script loads asynchronously, for modernity's sake. I could defer it but there's current-login detection. -->
+	<!-- Current-login detection will move the URL to the appropriate page based on login requirement. -->
+	<script src="js/killercode.js" async></script>
+	<!-- Google Fonts: Anonymous Pro & Inknut Antiqua -->
+	<link href='https://fonts.googleapis.com/css?family=Anonymous+Pro:400italic,400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Inknut+Antiqua:900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<!-- Single-Page, Full-screen Interface, will feature two parts to the page. -->
+	<!-- One part will be for information about the site, the other for logging In. -->
+	<!-- Please endeavour to use Firefox/Chrome for optimum viewing. -->
+	<section class="wrap" id="intro">
+		<!-- Contains "Welcome" -->		
+		<main class="wrap">
+			<span> <!-- span acts as an animatable background, not a redundant wrap. -->
+			<div>
+				<h1>WEBD211</h1>
+				<hr>
+				<h3>Humber College Course<br>Professor Shangeeth Aiyadurai</h3>			
+			</div>
+			</span>
+		</main>
+		<!-- Contains "Login" -->
+		<aside class="wrap">
+			<div>	
+				<p> Please Login.</p>
+				<!-- Switches a filetype for actual js! -->
+				<!-- Helps to avoid eventHandler code. -->
+				<form action="javascript:storeID()">
+					<!-- Input Fields -->
+					<input id="login" required
+					     type="text"				      
+				  placeholder="Humber ID">				
+					<input id="pass" required
+						 type="password"				 
+				  placeholder="Password">
+					<!-- Input Buttons -->
+					<span>
+						<input type="submit"
+							  value="Login">
+						<input type="submit"
+							  value="Signup">
+					</span>
+				</form>
+			</div>
+		</aside>
+	</section>
+</body>
+</html>
+
