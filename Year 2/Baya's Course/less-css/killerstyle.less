@@ -5,21 +5,101 @@
 /*   Baya Benrachi - WEBD221    */
 /* ---------------------------- */
 
+/* PLS AVOID CHROME -- INCMPTBL */
+/* WITH LESS.JS COMPILATION NOW */
+
 /* ---------------------------- */
 /*      VARIABLES GO HERE       */
 /* ---------------------------- */
+
+// Colours -- Elements
+@bgColor1:   #ecf0f1; // Cloud
+@bgColor2:  lighten(@bgColor1, 10%); // 10% Lighten than Cloud
+@navColor1: #e74c3c; // Alizarin
+@navColor2: darken(@navColor1, 15%); // 15% Darker than Alizarin
+
+// Colours -- Fonts
+@h1Color: ;
+
 
 /* ---------------------------- */
 /*        MIXINS GO HERE        */
 /* ---------------------------- */
 
+// .transition() is like calling a function, and @tvalue is an expected argument.
+.transition(@tvalue) {
+
+  	-webkit-transition: @tvalue;
+	-moz-transition: @tvalue;
+	-o-transition: @tvalue;
+	transition: @tvalue;
+//  "Parametric Mixins" allow for wholly dynamic use of code snippets.
+}
+
 /* ---------------------------- */
 /*    GENERAL LESS GOES HERE    */
 /* ---------------------------- */
 
+.wrap { // Used in most parent containers to enable Flex.
+	
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	.transition(all 0.5s cubic);
+
+//  The selection below modifies values set in the class -- because they take precedence.
+
+	article > & { // ARTICLE > .WRAP (Targets immediate <section> & <footer>)
+		
+		width: 1000px;
+		flex-direction: column; // We need vertical flow.
+		justify-content: center;
+		background-color: @bgColor2;
+
+		&:last-child { // ARTICLE > .WRAP:LAST-CHILD (Targets immediate <footer>)
+			
+			margin-top: 5vh;
+			height: 40vh;
+		}
+	}
+
+	main > & {
+
+		flex-direction: column;
+	}
+}
+
+body > article {
+	
+	flex-direction: column;
+	background-color: @bgColor1;
+
+	& section {
+		
+		margin-top: 10vh;
+		
+		& header {
+
+			background-color: @navColor1;
+		}
+
+		& span .wrap {
+
+			// Keep content flowing vertically (but in chunks of rows)
+		}
+	}
+
+}
+
 /* ---------------------------- */
 /*    PAGE-SPECIFIC LESS HERE   */
 /* ---------------------------- */
+
+#welcome, #about, #register {
+	
+	height: 130vh;
+}
 
 /* ---------------------------- */
 /*      ANIMATIONS GO HERE      */

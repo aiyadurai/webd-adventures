@@ -7,9 +7,11 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 	<!-- Page Purpose: Welcome Page -->
 	<title>Welcome to Summit 2015</title>
-	<link rel="stylesheet/less" type="text/css" href="less-css/killerstyle.less">
+	<link rel="stylesheet" href="less-css/normalize.css">
+	<link rel="stylesheet" type="text/less" href="less-css/killerstyle.less">
 	<!-- This script loads asynchronously, for modernity's sake. -->
 	<!-- Dynamic LESS compilation is enabled through this file: -->
+	<!-- Since I used the school's mac labs, I cannot install pre-processor LESS. -->
 	<script src="js/less.min.js" async></script>
 	<!-- Google Fonts: Anonymous Pro & Inknut Antiqua -->
 	<link href='https://fonts.googleapis.com/css?family=Anonymous+Pro:400italic,400' rel='stylesheet' type='text/css'>
@@ -17,67 +19,61 @@
 </head>
 <body>
 	<!-- Page will feature one central zone for content, with navigation, main, and aside within. Footer will be a seperate zone, underneath. -->
-	<!-- Please endeavour to use Firefox/Chrome for optimum viewing. -->
-	<!-- (Dev Note) Emmet Snippet: article.wrap#welcome>section.wrap>header.wrap>nav>input:b*9^^+main.wrap>article.wrap*2>aside>img^+main>h1+p^^^+aside.wrap>img+h2+br+h2+p+br+img*2+h2^^+footer.wrap>p+div>img*3 -->
+	<!-- Please endeavour to use Firefox (no Chrome) for optimum viewing. -->
+	<!-- (Dev Note) Starting Emmet Snippet: article.wrap#welcome>section.wrap>header.wrap>nav>input:b*9^^+main.wrap>article.wrap*2>aside>img^+main>h1+p^^^+aside.wrap>img+h2+br+h2+p+br+img*2+h2^^+footer.wrap>p+div>img*3 -->
 	<article class="wrap" id="welcome">
-
 		<section class="wrap">
-
 			<header class="wrap">
 				<nav>
-					<input type="button" value="">
-					<input type="button" value="">
-					<input type="button" value="">
-					<input type="button" value="">
-					<input type="button" value="">
-					<input type="button" value="">
-					<input type="button" value="">
-					<input type="button" value="">
-					<input type="button" value="">
+					<input type="button" value="Welcome">
+					<input type="button" value="About">
+					<input type="button" value="Register">
+					<input type="button" value="Schedule">
+					<input type="button" value="Sessions">
+					<input type="button" value="Locations">
+					<input type="button" value="Blog">
+					<input type="button" value="Prior Years">
+					<input type="button" value="Sitemap">
 				</nav>
 			</header>
-
+			<span class="wrap">
 			<main class="wrap">
 				<article class="wrap">
-					<aside><img src="" alt=""></aside>
+					<aside><img src="http://dummyimage.com/200x200/e74c3c/FFF&text=Lorem" alt="Image"></aside>
 					<main>
-						<h1></h1>
-						<p></p>
+						<h1>Lorem Ipsum</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo necessitatibus officiis autem, libero ex commodi tenetur accusantium blanditiis dolores assumenda sed nulla expedita earum ipsam non, minus iure architecto.</p>
 					</main>
 				</article>
-				
-				<br>
-
 				<article class="wrap">
-					<aside><img src="" alt=""></aside>
+					<aside><img src="http://dummyimage.com/200x200/e74c3c/FFF&text=Lorem" alt="Image"></aside>
 					<main>
-						<h1></h1>
-						<p></p>
+						<h1>Lorem Ipsum</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nostrum voluptatum eos est neque et repellat, doloribus natus! Maiores ratione unde, temporibus libero reprehenderit dignissimos aliquid animi illo provident consequatur!</p>
 					</main>
 				</article>
 			</main>
-
 			<aside class="wrap">
-				<img src="" alt="">
-				<h2></h2>
+				<img src="http://dummyimage.com/200x200/e74c3c/FFF&text=Lorem" alt="Image">
+				<h2>Lorem Ipsum</h2>
 				<br>
-				<h2></h2>
-				<p></p>
+				<h2>Lorem Ipsum</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ea quam, illo aliquid voluptates asperiores veritatis, unde a tempore, cupiditate perferendis inventore magnam omnis doloribus, at fugit delectus laborum hic.</p>
 				<br>
-				<img src="" alt="">
-				<img src="" alt="">
-				<h2></h2>
+				<img src="http://dummyimage.com/100x200/e74c3c/FFF&text=Logo" alt="Logo">
+				<img src="http://dummyimage.com/100x200/e74c3c/FFF&text=Logo" alt="Logo">
+				<h2>Lorem Ipsum</h2>
 			</aside>
+			</span>
 		</section>
-
 		<footer class="wrap">
 			<p></p>
 			<div>
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
+				<img src="http://dummyimage.com/100x200/e74c3c/FFF&text=Logo" alt="Logo">
+				<img src="http://dummyimage.com/100x200/e74c3c/FFF&text=Logo"Logo alt="Logo">
+				<img src="http://dummyimage.com/100x200/e74c3c/FFF&text=Logo" alt="Logo">
 			</div>
-		</footer>		
+		</footer>
 	</article>
 </body>
 </html>
